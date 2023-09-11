@@ -8,8 +8,9 @@
 <body>
   <form method="get" id="Datos">
       <h2>Buscador</h2>
-      <label class="Tarjetas">Año </label> <input class="campo" type="number" id="anio"> <br>
-      <label class="Tarjetas">Denominacion  </label>
+      <label class="Tarjetas" for="anio">Año </label> 
+      <input class="campo" type="number" id="anio" name="anio"> <br>
+      <label class="Tarjetas" for="Denominacion">Denominacion  </label>
          <select id="Denominacion" class= "campo" name="Denominacion">
             <option value="00">00</option>
             <option value="0.01">0.01</option>
@@ -23,7 +24,7 @@
             <option value="100">100.00</option>
             <option value="500">500.00</option>
          </select> <br>
-      <label class="Tarjetas">Tipo de moneda </label>
+      <label class="Tarjetas" for="Tipo">Tipo de moneda </label>
          <select id="Tipo" class="campo" name="Tipo">
           <option>Seleccionar</option>
           <option>Austral</option>
@@ -34,6 +35,6 @@
      <input type="submit" value="Buscar">  
 
   </form> 
-
+ <script  src="BE.mjs"></script>
 </body>
 </html>
