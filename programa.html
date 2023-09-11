@@ -3,13 +3,15 @@
 <head>
   <title>Monedas</title>
   <link href="./estilo.css" rel="stylesheet">
+  <link>
 </head>
 <body>
-  <form>
+  <form method="get" id="Datos">
       <h2>Buscador</h2>
-      <label>Año </label> <input class="campo" type="number"> <br>
-      <label  id="Denominacion" >Denominacion  </label>
+      <label class="Tarjetas">Año </label> <input class="campo" type="number" id="anio"> <br>
+      <label class="Tarjetas">Denominacion  </label>
          <select id="Denominacion" class= "campo" name="Denominacion">
+            <option value="00">00</option>
             <option value="0.01">0.01</option>
             <option value="0.05">0.05</option>
             <option value="0.10">0.10</option>
@@ -21,13 +23,17 @@
             <option value="100">100.00</option>
             <option value="500">500.00</option>
          </select> <br>
-      <label>Tipo de moneda </label>
+      <label class="Tarjetas">Tipo de moneda </label>
          <select id="Tipo" class="campo" name="Tipo">
+          <option>Seleccionar</option>
           <option>Austral</option>
           <option>Peso Argentino</option>
           <option>Peso Ley</option>
           <option>Peso Moneda Nacional</option>
        </select>
+     <input type="submit" value="Buscar">  
+
   </form> 
+
 </body>
 </html>
